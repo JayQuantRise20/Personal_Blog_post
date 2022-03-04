@@ -1,104 +1,203 @@
 
 /* UTILITIES */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-   }
-   body {
-    font-family: cursive;
-   }
-   a {
-    text-decoration: none;
-   }
-   li {
-    list-style: none;
-   }
 
-   /* NAVBAR STYLING STARTS */
-.navbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px;
-    background-color: teal;
-    color: #fff;
-   }
-   .nav-links a {
-    color: #fff;
-   }
-   /* LOGO */
-   .logo {
-    font-size: 32px;
-   }
-   /* NAVBAR MENU */
-   .menu {
-    display: flex;
-    gap: 1em;
-    font-size: 18px;
-   }
-   .menu li:hover {
-    background-color: #4c9e9e;
-    border-radius: 5px;
-    transition: 0.3s ease;
-   }
-   .menu li {
-    padding: 5px 14px;
-   }
-   /* DROPDOWN MENU */
-   .services {
-    position: relative; 
-   }
-   .dropdown {
-    background-color: rgb(1, 139, 139);
-    padding: 1em 0;
-    position: absolute; /*WITH RESPECT TO PARENT*/
-    display: none;
-    border-radius: 8px;
-    top: 35px;
-   }
-   .dropdown li + li {
-    margin-top: 10px;
-   }
-   .dropdown li {
-    padding: 0.5em 1em;
-    width: 8em;
-    text-align: center;
-   }
-   .dropdown li:hover {
-    background-color: #4c9e9e;
-   }
-   .services:hover .dropdown {
-    display: block;
-   }
+
+.main{
+display:grid;
+grid-template-columns:600px 600px;
+grid-gap:15px;
+justify-content:center;
+height:30vw;
+
+}
+
+
+
+  .box{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding: 15px;
+    background: white;
+    margin:2em;
+
+    }
+
+    #description{
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      justify-content:center;
+     
+
+    }
+
+    #ca_image{
+    background-image: url("images/ca_image.jpg");
+
+    }
+
+
+    .features{
+      display:grid;
+      grid-template-columns:250px 250px 250px 250px;
+      justify-content:space-evenly;
+      height:180px;
+
+    }
+
+    .small_box{
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      padding: 15px;
+      border: 2px solid rgb(255, 145, 0);
+      background: rgb(221, 175, 24);
+      margin:2em;
+      font-weight:bold;
+      color:rgb(184, 23, 23);
+  
+      }
+
+    #image_item_2{
+      background-image: url("images/how_it_work.jpg");
+    }
+
+    .account{
+      display:grid;
+      grid-template-columns:500px 500px 500px;
+      justify-content:space-evenly;
+      height:350px;
+
+    }
+
+    .sign_box{
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      padding: 15px;
+      background: white;
+      margin:2em;
+      border:2px solid orange;
+      color: orange
+  
+      }
+
+    #text_box{
+      display:flex;
+      color:orangered;
+      align-items:center;
+      justify-content:center;
+      flex-direction:column;
+    }
+
+  #sign_in{
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:contain;
+    color: orange
+   
+  }
+  #sign_up{
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:contain;
+    color: orange;
+    
+    
+}
+
+
+.footer-clean {
+  padding:50px 0;
+  background-color: rgba(0, 0, 0, 0.753);
+  color:white;
+}
+
+.footer-clean h3 {
+  margin-top:0;
+  margin-bottom:12px;
+  font-weight:bold;
+  font-size:16px;
+}
+
+.footer-clean ul {
+  padding:0;
+  list-style:none;
+  line-height:1.6;
+  font-size:14px;
+  margin-bottom:0;
+}
+
+.footer-clean ul a {
+  color:inherit;
+  text-decoration:none;
+  opacity:0.8;
+}
+
+.footer-clean ul a:hover {
+  opacity:1;
+}
+
+.footer-clean .item.social {
+  text-align:right;
+}
+
+@media (max-width:767px) {
+  .footer-clean .item {
+    text-align:center;
+    padding-bottom:20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-clean .item.social {
+    text-align:center;
+  }
+}
+
+.footer-clean .item.social > a {
+  font-size:24px;
+  width:40px;
+  height:40px;
+  line-height:40px;
+  display:inline-block;
+  text-align:center;
+  border-radius:50%;
+  border:1px solid #ccc;
+  margin-left:10px;
+  margin-top:22px;
+  color:inherit;
+  opacity:0.75;
+}
+
+.footer-clean .item.social > a:hover {
+  opacity:0.9;
+}
+
+@media (max-width:991px) {
+  .footer-clean .item.social > a {
+    margin-top:40px;
+  }
+}
+
+@media (max-width:767px) {
+  .footer-clean .item.social > a {
+    margin-top:10px;
+  }
+}
+
+.footer-clean .copyright {
+  margin-top:14px;
+  margin-bottom:0;
+  font-size:13px;
+  opacity:0.6;
+}
+
 
 
   
-.container{
-    /* Step 1: Set display to grid */
-      display:grid;
-   /* Step 2: setup rows amd columns */
-      /* grid-template-columns: repeat(3, 1fr); */
-      grid-template-columns: 300px 300px 300px;
-      grid-template-rows: 100px 600px 100px;
-      grid-template-areas: 
-      "hd hd hd hd hd hd hd hd"
-      "main main main main main main main main"
-      "ft ft ft ft ft ft ft ft";
-      border: 2px solid yellow;
-  }
-  .box{
-    border: 1px solid red;
-    background: #F8FA9D;
-    }
-/* Assign grid area below */
-  .header{
-    grid-area:hd
-  }
-  .footer{
-    grid-area:ft
-  }
-
-  .content{
-    grid-area:main
-  }
