@@ -43,6 +43,7 @@ height:30vw;
       grid-template-columns:250px 250px 250px 250px;
       justify-content:space-evenly;
       height:180px;
+      margin:80px;
 
     }
 
@@ -63,11 +64,17 @@ height:30vw;
       background-image: url("images/how_it_work.jpg");
     }
 
+    #image_item_3{
+      background-image: url("images/super-deduction-BKL.jpeg");
+    }
+
     .account{
       display:grid;
       grid-template-columns:500px 500px 500px;
       justify-content:space-evenly;
       height:350px;
+      margin:80px;
+      
 
     }
 
