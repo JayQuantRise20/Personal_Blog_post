@@ -1,8 +1,16 @@
 
 /* UTILITIES */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap'); 
 @import url('post_style.css');
 @import url('footer.css');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url("https://use.fontawesome.com/releases/v5.11.2/css/all.css");
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css");
+
+
 
 .main{
 display:grid;
@@ -30,6 +38,7 @@ height:30vw;
 
 #ca_image{
     background-image: url("images/ca_image.jpg");
+
 }
 
 
@@ -66,7 +75,7 @@ height:30vw;
       grid-template-columns:500px 500px 500px;
       justify-content:space-evenly;
       height:350px;
-      margin:80px; 
+      margin:80px;
 }
 
 .sign_box{
@@ -94,7 +103,7 @@ height:30vw;
     flex-direction:column;
     align-items:center;
     justify-content:contain;
-    color: orange 
+    color: orange
 }
 
 #sign_up{
@@ -106,8 +115,17 @@ height:30vw;
     color: orange;
 }
 
+@media (max-width: 600px) {
+  .main {
+    // rules for medium-sized screen
+    display:grid;
+    grid-template-rows:300px 300px;
+    grid-gap:15px;
+    justify-content:flex-start;
+    height:15vw;
+  }
 
 
 
 
-  
+}
